@@ -20,7 +20,8 @@ AutoSub is a CLI application to generate subtitle files (.srt, .vtt, and .txt tr
 ⭐ Featured in [DeepSpeech Examples](https://github.com/mozilla/DeepSpeech-examples) by Mozilla
 
 ## Modification
-To inference zn-ch model rather than english version, some modification was made.
+To inference zn-ch model rather than english version, modifications were made in autosub_cn/
+If you want to use english model, please see [original repository](https://github.com/abhirooptalasila/AutoSub).
 
 ## Installation
 
@@ -57,18 +58,18 @@ deepspeech-0.9.3-models-zh-CN.scorer
 * The model files should be in the repo root directory and will be loaded/downloaded automatically. Incase you have multiple versions, use the `--model` and `--scorer` args while executing
 * By default, Coqui is used for inference. You can change this by using the `--engine` argument with value `"ds"` for DeepSpeech
 * For languages other than English, you'll need to manually download the model and scorer files. Check [here](https://discourse.mozilla.org/t/links-to-pretrained-models/62688) for DeepSpeech and [here](https://coqui.ai/models) for Coqui.
-* After following the installation instructions, you can run `autosub/main.py` as given below. The `--file` argument is the video file for which subtitles are to be generated
+* After following the installation instructions, you can run `autosub_cn/main.py` as given below. The `--file` argument is the video file for which subtitles are to be generated
     ```bash
-    $ python3 autosub_CN/main.py --file ~/movie.mp4
+    $ python3 autosub_CN/main.py --file your_file.mp4
     ```
 * After the script finishes, the SRT file is saved in `output/`
 * The optional `--split-duration` argument allows customization of the maximum number of seconds any given subtitle is displayed for. The default is 5 seconds
     ```bash
-    $ python3 autosub_CN/main.py --file ~/movie.mp4 --split-duration 8
+    $ python3 autosub_CN/main.py --file your_file.mp4 --split-duration 8
     ```
 * By default, AutoSub outputs SRT, VTT and TXT files. To only produce the file formats you want, use the `--format` argument
     ```bash
-    $ python3 autosub_CN/main.py --file ~/movie.mp4 --format srt txt
+    $ python3 autosub_CN/main.py --file your_file.mp4 --format srt txt
     ```
 * Open the video file and add this SRT file as a subtitle. You can just drag and drop in VLC.
 
