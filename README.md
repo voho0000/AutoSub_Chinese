@@ -1,6 +1,6 @@
-# AutoSu
+# AutoSub_Chinese
 
-**Pending Updating Chinese Version on 2022/09/27**
+**for chinese model use**
 
 - [AutoSub](#autosub)
   - [About](#about)
