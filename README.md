@@ -18,9 +18,9 @@
 AutoSub is a CLI application to generate subtitle files (.srt, .vtt, and .txt transcript) for any video file using either [Mozilla DeepSpeech](https://github.com/mozilla/DeepSpeech) or [Coqui STT](https://github.com/coqui-ai/STT). I use their open-source models to run inference on audio segments and [pyAudioAnalysis](https://github.com/tyiannak/pyAudioAnalysis) to split the initial audio on silent segments, producing multiple smaller files (makes inference easy).
 
 ⭐ Featured in [DeepSpeech Examples](https://github.com/mozilla/DeepSpeech-examples) by Mozilla
-
+   
 ## Modification
-To inference zn-ch model rather than english version, modifications were made in autosub_cn/
+To inference zn-ch model rather than english version, modifications were made in autosub_cn/    
 If you want to use english model, please see [original repository](https://github.com/abhirooptalasila/AutoSub).
 
 ## Installation
